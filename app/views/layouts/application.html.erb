@@ -11,6 +11,18 @@
   </head>
 
   <body>
+    <div class="navbar" style="background: lightgrey; width: 100%; text-align: center;">
+      Nav
+
+      <%= link_to "About", about_us_path %>
+      <%= link_to "Home", root_path %>
+      <%= link_to "Contact", contact_path  %>
+    </div>
+
+     <p>Today's date is: <%= Date.today %></p>
+     pe + tab = with printing
+     er + tab = without printing
     <%= yield %>
+    <p>My simple footer</p>
   </body>
 </html>
